@@ -46,6 +46,11 @@ class WorkpieceInput(BaseModel):
 def root():
     #return {"message": "CNC QC Defect API พร้อมใช้งาน ลองเปิด /docs"}
     return {"message": "CNC QC Defect API พร้อมใช้งาน ลองเปิด /docs -> ตอนนี้ออนไลน์บน Render เรียบร้อยแล้ว!"}
+
+@app.get("/model-info")
+def root():
+    return {"model": meta["model_name"], "version": meta["version"], "feature used": meta["WorkpieceInput']}
+    
 @app.get("/health")
 def health():
     return {"status": "ok", "model": meta["model_name"], "version": meta["version"]}
