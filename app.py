@@ -49,7 +49,7 @@ def root():
 
 @app.get("/model-info")
 def root():
-    return {"model": meta["model_name"], "version": meta["version"], "feature used": meta["features_names"]}
+    return {"model": meta["model_name"], "version": meta["version"], "feature used": meta["feature_names"]}
         
 @app.get("/health")
 def health():
