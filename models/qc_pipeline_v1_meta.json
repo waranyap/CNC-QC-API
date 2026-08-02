@@ -1,0 +1,43 @@
+{
+  "model_name": "CNC_QC_Defect_Classifier",
+  "version": "1.0.0",
+  "training_date": "2026-08-02 12:26:48",
+  "sklearn_version": "1.6.1",
+  "feature_names": {
+    "numeric": [
+      "vibration",
+      "temperature",
+      "current",
+      "dimension_diff",
+      "surface_score"
+    ],
+    "categorical": [
+      "machine_id",
+      "shift",
+      "material"
+    ]
+  },
+  "categorical_values": {
+    "machine_id": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05"
+    ],
+    "shift": [
+      "ดึก",
+      "บ่าย",
+      "เช้า"
+    ],
+    "material": [
+      "Aluminum",
+      "Brass",
+      "Steel"
+    ]
+  },
+  "target_classes": [
+    "Normal",
+    "Defect"
+  ]
+}
